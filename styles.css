@@ -1,0 +1,76 @@
+body {
+    background: #ffcccb;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+h2, h1 {
+    color: #ff69b4;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.card {
+    background: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.celebration {
+    position: relative;
+    margin-top: 20px;
+}
+
+.cake, .gift, .balloons {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+}
+
+.cake {
+    background-image: url('cake.png'); /* Placeholder for actual image */
+    left: 10%;
+}
+
+.gift {
+    background-image: url('gift.png'); /* Placeholder for actual image */
+    right: 10%;
+}
+
+.balloons {
+    background-image: url('balloons.png'); /* Placeholder for actual image */
+    top: -50px;
+    left: 40%;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
